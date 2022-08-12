@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shadi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="./shadi.js" defer></script>
+    <title>shadi</title>
+</head>
+<!-- ----------------------------------------------------------------------------------------------------->
+<body>
+    <!-- First I should create a navbar -->
+    <nav>
+        <div>
+            <section>
+                <a href="#home">Home</a>
+                <a href="#ed">Education</a>
+                <a href="#about">About me</a>
+                <a href="#contact">Contact Me</a>
+            </section>
+        </div>
+    </nav>
+    <main>
+<!-- ----------------------------------------------------------------------------------------------------->
+        <!-- home section -->
+        <div class="home-bg" id="home">
+            <div class="home">
+                <img src="./doc/shadi_pic.png" alt="This is my picture">
+                <!-- introduction myself -->
+                <section class="intro">
+                    <h1>Hi, <br> This is me, shadi Shayan</h1>
+                    <h6> Thank you for visiting my website. <br> 
+                        I am Shadi Shayan a student interested in programming. If you want to be a programmer,
+                        at first, it is difficult to choose which field you are 
+                        interested in.
+                        I used to try to learn Android programming with Java, but after a while I realized that I am much more interested
+                        in web programming. So, now I am a Seneca College student, and I am trying to become a full stack developer. 
+                        This is my first website at the end of the WEB222 course with Dr. Muath Alzghool</h6>
+                    <section>
+                        <form action="./doc/ShadiResume.docx" method="get">
+                            <button>my resume</button>
+                        </form>
+                        <a href="#contact">contact me</a>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <!-- --------------------------------------------------------------------------------------------------- -->
+        <!-- about me -->
+        <div class="about-bg" id="about">
+            <div class="about">
+                <section>
+                    <h2>About me</h2>
+                    <h4>I am a newcomer in Canada. I have a bachelor's degree in computer science from Isfahan University in Iran. But unfortunately, I didn't get to work after finishing my lesson and gradually forgot the material. When I decided to work, I didn't have enough skills and to be honest, I was rejected in the interview. When I came to Canada, I wasn't really sure if I would continue this field (programming). I was afraid that I would not be able to succeed. Honestly, I had very low self-confidence. I enrolled in Seneca College's computer course, but with much more motivation.</h4>
+                    <h6>Date : 2022-08-12</h6>
+                </section>
+                <section>
+                    <h2>Basic Information</h2>
+                    <h4>Name : <span>Shadi Shayan</span></h4>
+                    <!-- <h4>Gender : <span>Female</span></h4> -->
+                    <h4>Age : <span>29</span></h4>
+                    <h4>Seneca Email : <span>sshayan2@myseneca.ca</span></h4>
+                    <h4>Personal Email : <span>shadi.shayan71@gmail.com</span></h4>
+                    <h4>Language : <span> Persian, English</span></h4>
+                    <h4>Class Section : <span>NFF</span></h4>
+                    <h4>Student Id : <span>135824217</span></h4>
+                    <h4>Instructor : <span>Dr.Muath Alzghool</span></h4>
+                </section>
+            </div>
+        </div>
+    <!-- ----------------------------------------------------------------------------------------------------->
+        <!-- education -> ed -->
+        <div class="ed-bg" id="ed">
+            <div class="ed">
+                <h2>Education</h2>
+                <div class="ed-content">
+                    <div class="ed-row">
+                        <section>
+                            <h3>Bachelor’s degree</h3>
+                            <h4>Computer Science</h4>
+                            <h4>Isfahan university</h4>
+                            <h5>(2010-2014)</h5>
+                        </section>
+                        <section class="nothing"></section>
+                    </div>
+                    <div class="ed-row">
+                        <section>
+                            <h3>Diploma</h3>
+                            <h4>Computer Programming</h4>
+                            <h4>Seneca College</h4>
+                            <h5>(2022-...)-present</h5>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- ----------------------------------------------------------------------------------------------------->
+        <!-- contact with me -->
+        <div class="contact-bg" id="contact">
+            <form action="" method="post" class="form">
+                <h2>Contact Me</h2>
+                <h3>Please fill out the form below to contact me</h3>
+                    <section class="contact-input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                    </section>
+
+                    <section class="contact-input">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                    </section>
+                    <!-- common city in Canada like Toronto, Quebec, Vancouver, Montreal-->
+                  <section class="contact-input">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" required list="cities">
+                        <datalist class="canaf=dian-cities">
+                            <option value="Toronto">
+                            <option value="Quebec">
+                            <option value="Vancouver">
+                            <option value="Montreal">
+
+                        </datalist>
+                    </section>
+                    <section class="contact-input">
+                        <label for="post">Post-Code:</label>
+                        <input type="text" id="post">
+                    </section>
+                    <section class="radio">
+                        <section>
+                            <input type="radio" name="purpose" id="hire">
+                            <label for="hire">Hire</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="purpose" id="comment">
+                            <label for="comment">Comment</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="purpose" id="question">
+                            <label for="question">Question</label>
+                        </section>
+                    </section> 
+                    <!-- age -->
+                    <section class="contact-input">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age">
+                    </section>
+                    <!-- ask about country -->
+                    <div class="country">
+                        <h4>Where are you living?</h4>
+                        <section class="radio_country">
+                            <section>
+                                <input type="radio" name="country" id="canada">
+                                <label for="canada">Canada</label>
+                            </section>
+                            <section>
+                                <input type="radio" name="country" id="other">
+                                <label for="other">Other</label>
+                            </section>
+                    </div>
+
+
+                    <section class="contact-input hour-container">
+                        <label for="hour">Hour Rate:</label>
+                        <input type="text" id="hour">
+                    </section>
+                <div class="message">
+                    <label for="message">Message you want to send:</label>
+                    <textarea type="text" id="message"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
